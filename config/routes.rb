@@ -6,14 +6,14 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get 'home/index'
-  get 'home/about' => 'home#about', as: 'about'
+  get 'home/about' => 'home#about'
   get 'home/search', as: 'search'
   get 'home/feedback', as: 'feedback'
   get 'home/contact', as: 'contact'
   get 'home/news', as: 'news'
   get 'home/data', as: 'data'
   get 'home/media', as: 'media'
-  get 'home/accounts', as: 'accounts'
+  get 'home/narratives', as: 'narratives'
 
   # Provides default path for signed in users
   match 'user_root' => 'users#show', via: :all

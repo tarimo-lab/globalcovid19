@@ -23,6 +23,6 @@ class HomeController < ApplicationController
   def media
   end
 
-  def accounts
+  def narratives
   end
 end
