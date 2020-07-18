@@ -8,6 +8,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.boolean :public, default: false
       t.integer :approves, default: 0
       t.integer :disapproves, default: 0
+      t.integer :kind
 
       t.timestamps
     end
