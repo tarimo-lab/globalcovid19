@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_18_152411) do
+ActiveRecord::Schema.define(version: 2020_07_18_152709) do
 
   create_table "comments", force: :cascade do |t|
     t.text "body"
@@ -30,9 +30,9 @@ ActiveRecord::Schema.define(version: 2020_07_18_152411) do
     t.boolean "public", default: false
     t.integer "approves", default: 0
     t.integer "disapproves", default: 0
-    t.integer "kind"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "kind"
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
@@ -57,7 +57,8 @@ ActiveRecord::Schema.define(version: 2020_07_18_152411) do
     t.string "first_name"
     t.string "last_name"
     t.string "username"
-    t.text "image_url", default: ""
+    t.text "image_url"
+    t.text "bio"
     t.integer "affiliation", null: false
     t.integer "role", default: 1
     t.string "reset_password_token"
@@ -65,7 +66,6 @@ ActiveRecord::Schema.define(version: 2020_07_18_152411) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.text "bio"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
