@@ -60,6 +60,8 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     auto_strip_attributes (2.6.0)
       activerecord (>= 4.0)
+    autoprefixer-rails (9.8.5)
+      execjs
     awesome_print (1.8.0)
     bcrypt (3.1.13)
     bindex (0.8.1)
@@ -67,6 +69,9 @@ GEM
       debug_inspector (>= 0.0.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
     bootstrap3-rails (3.2.0)
       rails (>= 4.0.0)
     builder (3.2.4)
@@ -245,6 +250,7 @@ DEPENDENCIES
   auto_strip_attributes
   awesome_print
   bootsnap (>= 1.4.2)
+  bootstrap-sass
   bootstrap3-rails
   byebug
   capybara (>= 2.15)

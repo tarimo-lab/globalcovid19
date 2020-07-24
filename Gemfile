@@ -29,6 +29,7 @@ gem 'execjs'
 gem 'jquery-rails'
 
 gem 'bootstrap3-rails'
+gem 'bootstrap-sass'
 gem "font-awesome-rails"
 
 gem 'rollbar'
@@ -80,3 +81,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'font-awesome-rails'

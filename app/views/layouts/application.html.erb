@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Globalcovid19</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Global Covid-19 Project</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="img/core-img/favicon.ico">
 
+    <!-- ***** All CSS Files ***** -->
+
+    <!-- Slidea Slider CSS -->
+    <link href="slidea-assets/css/slidea/slidea.css" rel="stylesheet">
+    <link href="slidea-assets/css/slidea/themes/default.css" rel="stylesheet">
+    <link href="slidea-assets/css/slidea/ui/default.css" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive/responsive.css">
+
+    <!-- Switch Fonts via CSS Import system -->
+    <link href="css/fonts/opensans.css" rel="stylesheet">
+
+  </head>
   <body>
+    <%= render partial: "partials/header" %>
     <%= yield %>
+    <%= render partial: "partials/footer" %>
   </body>
 </html>
