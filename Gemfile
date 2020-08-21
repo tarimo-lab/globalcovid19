@@ -28,8 +28,8 @@ gem 'execjs'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-gem 'bootstrap3-rails'
-gem 'bootstrap-sass'
+
+gem 'bootstrap', '~> 4.5.2'
 gem "font-awesome-rails"
 
 gem 'rollbar'
