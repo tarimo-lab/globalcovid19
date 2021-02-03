@@ -28,8 +28,8 @@ gem 'execjs'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-gem 'bootstrap3-rails'
-gem 'bootstrap-sass'
+
+gem 'bootstrap', '~> 4.5.2'
 gem "font-awesome-rails"
 
 gem 'rollbar'
@@ -78,8 +78,3 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem 'font-awesome-rails'
